@@ -14,6 +14,7 @@ body {
 .header {
   align-items: center;
   display: flex;
+  height: 50px;
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -52,6 +53,7 @@ body {
 .info-block {
   align-items: center;
   background: url('../images/banner.png') no-repeat center;
+  background-position-y: -568px;
   display: flex;
   flex-direction: column;
   height: 325px;
@@ -89,4 +91,101 @@ body {
   line-height: 38px;
   outline: none;
   width: 132px;
+}
+
+.advantage-block {
+  align-items: center;
+  background: #FFFFFF;
+  display: flex;
+  height: 234px;
+  justify-content: center;
+}
+
+.advantage-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-item {
+  box-sizing: border-box;
+  padding: 0 30px;
+  width: 310px;
+}
+
+.advantage-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.advantage-description {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.about-block {
+  background: #f7f7f7;
+  box-sizing: border-box;
+  display: flex;
+  height: 313px;
+  justify-content: center;
+  padding-top: 55px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  width: 350px;
+}
+
+.about-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.about-text {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.about-img {
+  background: url('../images/moon-1.jpg') no-repeat center;
+  background-size: cover;
+  height: 210px;
+  width: 310px;
+}
+
+.recreation-block {
+  box-sizing: border-box;
+  display: flex;
+  height: 305px;
+  justify-content: center;
+  padding-top: 55px;
+}
+
+.recreation-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  width: 320px;
+}
+
+.recreation-img {
+  background: url('../images/moon-2.jpg') no-repeat center;
+  background-size: cover;
+  height: 210px;
+  width: 310px;
+}
+
+.recreation-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.recreation-text {
+  font-size: 10px;
+  line-height: 14px;
 }
