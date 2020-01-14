@@ -273,3 +273,63 @@ body {
   outline: none;
   width: 128px;
 }
+
+.footer {
+  align-items: center;
+  background: #303846;
+  display: flex;
+  height: 175px;
+  justify-content: space-around;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-wrap {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  background: url('../images/logo.svg');
+  background-size: contain;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.footer-title {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.footer-label {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-list {
+  margin: 10px 0;
+}
+
+.footer-list-item {
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+}
