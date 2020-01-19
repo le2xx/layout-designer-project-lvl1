@@ -1,9 +1,9 @@
 /** CSS STYLE **/
-
-body {
+body, a {
+  color: #000000;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 .main {
@@ -44,10 +44,26 @@ body {
 }
 
 .menu-item {
-  font-size: 10px;
-  line-height: 10px;
   list-style-type: none;
   margin-right: 10px;
+}
+
+.menu-item > a {
+  font-size: 10px;
+  line-height: 10px;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
 }
 
 .info-block {
@@ -67,7 +83,7 @@ body {
   width: 140px;
 }
 
-.title {
+.info-title {
   color: #FFFFFF;
   font-size: 28px;
   line-height: 30px;
@@ -86,6 +102,7 @@ body {
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   color: #FFFFFF;
+  cursor: pointer;
   font-size: 12px;
   height: 38px;
   line-height: 38px;
@@ -112,17 +129,6 @@ body {
   width: 310px;
 }
 
-.advantage-title {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.advantage-description {
-  font-size: 10px;
-  line-height: 14px;
-}
-
 .about-block {
   background: #f7f7f7;
   box-sizing: border-box;
@@ -137,17 +143,6 @@ body {
   flex-direction: column;
   margin-right: 100px;
   width: 350px;
-}
-
-.about-title {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.about-text {
-  font-size: 10px;
-  line-height: 14px;
 }
 
 .about-img {
@@ -179,17 +174,6 @@ body {
   width: 310px;
 }
 
-.recreation-title {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.recreation-text {
-  font-size: 10px;
-  line-height: 14px;
-}
-
 .form-block {
   align-items: center;
   background: #f7f7f7;
@@ -202,13 +186,6 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-}
-
-.form-title {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
 }
 
 .form-item {
@@ -267,6 +244,7 @@ body {
   border: 1px solid #6cdcc0;
   border-radius: 10px;
   color: #6cdcc0;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 700;
   height: 36px;
@@ -329,6 +307,7 @@ body {
 
 .footer-list-item {
   color: #FFFFFF;
+  cursor: pointer;
   font-size: 10px;
   line-height: 14px;
   font-weight: 700;
