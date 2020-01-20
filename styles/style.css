@@ -86,6 +86,7 @@ body, a {
 .info-title {
   color: #FFFFFF;
   font-size: 28px;
+  font-weight: 700;
   line-height: 30px;
   margin: 0;
 }
@@ -93,6 +94,7 @@ body, a {
 .info {
   color: #FFFFFF;
   font-size: 12px;
+  font-weight: 700;
   line-height: 36px;
   margin: 0;
 }
@@ -104,9 +106,12 @@ body, a {
   color: #FFFFFF;
   cursor: pointer;
   font-size: 12px;
+  font-weight: 700;
   height: 38px;
   line-height: 38px;
   outline: none;
+  text-align: center;
+  text-decoration: none;
   width: 132px;
 }
 
