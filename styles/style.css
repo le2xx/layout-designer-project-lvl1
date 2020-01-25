@@ -1,22 +1,27 @@
 /** CSS STYLE **/
-body, a {
+body, a, select, input {
   color: #000000;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   margin: 0;
   padding: 0;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
+  text-decoration: none;
 }
 
 .header {
   align-items: center;
+  background: #FFFFFF;
   display: flex;
-  height: 50px;
+  height: 80px;
   justify-content: space-between;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .logo-block {
@@ -27,14 +32,13 @@ body, a {
 .logo {
   background: url('../images/logo.svg');
   background-size: contain;
-  height: 40px;
+  height: 60px;
   margin-right: 10px;
-  width: 40px;
+  width: 60px;
 }
 
 .label {
-  font-size: 10px;
-  line-height: 10px;
+  font-weight: 700;
 }
 
 .menu {
@@ -45,25 +49,23 @@ body, a {
 
 .menu-item {
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 16px;
 }
 
 .menu-item > a {
-  font-size: 10px;
-  line-height: 10px;
-  text-decoration: none;
+  font-weight: 500;
 }
 
 .title {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .text {
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .info-block {
@@ -72,28 +74,30 @@ body, a {
   background-position-y: -568px;
   display: flex;
   flex-direction: column;
-  height: 325px;
+  height: 360px;
   justify-content: center;
+  margin-top: 80px;
+  padding: 60px 0;
 }
 
 .info-logo {
   background: url('../images/logo.svg');
   background-size: contain;
-  height: 140px;
-  width: 140px;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 200px;
 }
 
 .info-title {
   color: #FFFFFF;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 35px;
   margin: 0;
 }
 
 .info {
   color: #FFFFFF;
-  font-size: 12px;
   font-weight: 700;
   line-height: 36px;
   margin: 0;
@@ -105,22 +109,28 @@ body, a {
   border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 12px;
   font-weight: 700;
   height: 38px;
   line-height: 38px;
   outline: none;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
-  width: 132px;
+}
+
+.anchor {
+  position: absolute;
+  top: -80px;
+  left: 0;
 }
 
 .advantage-block {
   align-items: center;
   background: #FFFFFF;
   display: flex;
-  height: 234px;
   justify-content: center;
+  padding: 60px 0;
+  position: relative;
 }
 
 .advantage-wrap {
@@ -131,52 +141,52 @@ body, a {
 .advantage-item {
   box-sizing: border-box;
   padding: 0 30px;
-  width: 310px;
+  width: 410px;
 }
 
 .about-block {
   background: #f7f7f7;
   box-sizing: border-box;
   display: flex;
-  height: 313px;
   justify-content: center;
-  padding-top: 55px;
+  padding: 60px 0;
+  position: relative;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   margin-right: 100px;
-  width: 350px;
+  width: 550px;
 }
 
 .about-img {
   background: url('../images/moon-1.jpg') no-repeat center;
   background-size: cover;
-  height: 210px;
-  width: 310px;
+  height: 240px;
+  width: 400px;
 }
 
 .recreation-block {
   box-sizing: border-box;
   display: flex;
-  height: 305px;
   justify-content: center;
-  padding-top: 55px;
+  padding: 60px 0;
+  position: relative;
 }
 
 .recreation-wrap {
   display: flex;
   flex-direction: column;
   margin-left: 120px;
-  width: 320px;
+  width: 550px;
 }
 
 .recreation-img {
   background: url('../images/moon-2.jpg') no-repeat center;
   background-size: cover;
-  height: 210px;
-  width: 310px;
+  height: 270px;
+  width: 400px;
 }
 
 .form-block {
@@ -184,39 +194,41 @@ body, a {
   background: #f7f7f7;
   display: flex;
   flex-direction: column;
-  height: 522px;
   justify-content: center;
+  padding: 60px 0;
+  position: relative;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  padding: 30px 0 0 0;
 }
 
 .form-item {
-  border: solid 1px #6cdcc0;
+  border: solid 2px #6cdcc0;
   display: flex;
   flex-direction: column;
-  margin: 0 0 16px 0;
-  width: 255px;
+  margin: 0 0 30px 0;
+  width: 400px;
 }
 
 .legend {
   color: #6cdcc0;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 26px;
 }
 
 .field {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .form-label {
-  font-size: 10px;
+
   line-height: 14px;
   font-weight: 700;
 }
@@ -226,10 +238,10 @@ body, a {
   border: 1px solid #e6e6e6;
   border-radius: 7px;
   box-sizing: border-box;
-  height: 24px;
+  height: 34px;
   outline: none;
   padding: 0 5px;
-  width: 160px;
+  width: 220px;
 }
 
 .select {
@@ -237,11 +249,11 @@ body, a {
   border: 1px solid #e6e6e6;
   border-radius: 7px;
   box-sizing: border-box;
-  height: 24px;
+  height: 34px;
   outline: none;
   margin-right: 20px;
   padding: 0 5px;
-  width: 120px;
+  width: 200px;
 }
 
 .submit {
@@ -250,7 +262,7 @@ body, a {
   border-radius: 10px;
   color: #6cdcc0;
   cursor: pointer;
-  font-size: 12px;
+
   font-weight: 700;
   height: 36px;
   outline: none;
@@ -261,7 +273,7 @@ body, a {
   align-items: center;
   background: #303846;
   display: flex;
-  height: 175px;
+  height: 300px;
   justify-content: space-around;
 }
 
@@ -279,31 +291,22 @@ body, a {
 .footer-logo {
   background: url('../images/logo.svg');
   background-size: contain;
-  height: 30px;
+  height: 40px;
   margin-right: 10px;
-  width: 30px;
+  width: 40px;
 }
 
 .copyright {
   color: #FFFFFF;
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 400;
 }
 
 .footer-title {
   color: #FFFFFF;
-  font-size: 12px;
-  line-height: 16px;
   font-weight: 700;
 }
 
 .footer-label {
   color: #FFFFFF;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  margin: 0;
 }
 
 .footer-list {
@@ -313,7 +316,6 @@ body, a {
 .footer-list-item {
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 10px;
-  line-height: 14px;
+  line-height: 24px;
   font-weight: 700;
 }
