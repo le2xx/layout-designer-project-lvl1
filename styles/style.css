@@ -72,13 +72,20 @@ body, a, select, input {
 .info-block {
   align-items: center;
   background: url('../images/banner.png') no-repeat center;
-  background-position-y: -568px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 360px;
   justify-content: center;
   margin-top: 60px;
   padding: 60px 0;
+}
+
+.wrap-info-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
 }
 
 .info-logo {
@@ -104,13 +111,14 @@ body, a, select, input {
   margin: 0;
 }
 
-.button {
+.reservation-link {
   background: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   color: #FFFFFF;
   cursor: pointer;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: bold;
   height: 38px;
   line-height: 38px;
   outline: none;
